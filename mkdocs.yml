@@ -1,0 +1,38 @@
+
+site_name: Documentación de Indicadores
+theme:
+  name: material  
+  features:
+    - content.code.copy
+    - navigation.expand
+
+extra_css:
+  - styles/extra.css
+
+extra_javascript:
+  - scripts/extra.js
+
+
+
+
+
+plugins:
+  - mermaid2
+  
+nav:
+  - Inicio: index.md
+  
+  
+  
+markdown_extensions:
+  - toc:
+      permalink: false
+      toc_depth: 0
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+use_directory_urls: false
